@@ -60,3 +60,10 @@ while True:
             print("Salchichon: " + "45" + "kg")
             print("Proteinas en polvo: " + str(23) + "kg")
             print("Ingredientes variados: " + "98" + "kg")
+    if opcion == 4:
+        input("Agregue su numero de tarjeta: ")
+        input("Agregue su contraseña: ")
+        print("Procesando pago..")
+        for i in range(100000000):
+            None        
+        print("Pago procesado, recoja el ticket")
