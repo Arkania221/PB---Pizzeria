@@ -1,5 +1,6 @@
 
 comanda_completa = []
+preparado = False
 
 while True:
     print("1 - Seleccionar pedido / 2 - Visualizar preparacion / 3 - Gestionar Stock / 4 - Procesar Pago")
@@ -28,21 +29,34 @@ while True:
             else:
                 print("No valido")
     if opcion == 2:
-        print("Haciendo la masa...")
-        for i in range(100000000):
-            None
-        print("Añadiendo ingredientes al pan...")
-        for i in range(100000000):
-            None    
-        print("Cosechando limones...")
-        for i in range(100000000):
-            None
-        print("Encajando el pedido en caja...")
-        for i in range(100000000):
-            None
-        print("Listo para la entrega...")
-        for i in range(100000000):
-            None
-    '''if opcion == 3:
-
-    if opcion == 4:'''
+        if len(comanda_completa) == 0:
+            print("Nada para preparar")
+        else:
+            preparado = True
+            print("Haciendo la masa...")
+            for i in range(100000000):
+                None
+            print("Añadiendo ingredientes al pan...")
+            for i in range(100000000):
+                None    
+            print("Cosechando limones...")
+            for i in range(100000000):
+                None
+            print("Encajando el pedido en caja...")
+            for i in range(100000000):
+                None
+            print("Listo para la entrega...")
+            for i in range(100000000):
+                None
+    if opcion == 3:
+        print("Opcion 3")
+        if preparado:
+            print("Harina: " + str(50 - len(comanda_completa)) + "kg")
+            print("Salchichon: " + "45" + "kg")
+            print("Proteinas en polvo: " + str(23 - len(comanda_completa)) + "kg")
+            print("Ingredientes variados: " + "98" + "kg")
+        else:
+            print("Harina: " + str(50) + "kg")
+            print("Salchichon: " + "45" + "kg")
+            print("Proteinas en polvo: " + str(23) + "kg")
+            print("Ingredientes variados: " + "98" + "kg")
